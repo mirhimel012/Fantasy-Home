@@ -8,11 +8,14 @@ const Register = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors }
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data)
+    const{email, password} = data
+    createUser(email, password)
+      .then(result => {
+        console.log(result);
+      })
   };
   
     return (
