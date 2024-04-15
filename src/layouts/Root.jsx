@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 const Root = () => {
     return (
         <>
-            <div className="h-24">
+            <div className="h-20">
                 <Navbar></Navbar>
             </div>
             <div className="">
