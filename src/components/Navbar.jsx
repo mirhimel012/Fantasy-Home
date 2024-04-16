@@ -1,10 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const Navbar = () => {
+  const {logout, user} = useAuth()
   const navlinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/updatep">Update Profile</NavLink></li>
+        <li><NavLink to="/">HOME</NavLink></li>
+        <li><NavLink to="/about">ABOUT</NavLink></li>
+        <li><NavLink to="/contact">CONTACT</NavLink></li>
+        <li><NavLink to="/profile">UPDATE PROFILE</NavLink></li>
     </>
     return (
         <div>
@@ -21,12 +24,12 @@ const Navbar = () => {
     <Link to="/" className="btn btn-ghost text-base lg:text-4xl">Fantasy Home</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 text-2xl">
+    <ul className="menu menu-horizontal px-1 text-xl">
       {navlinks}
     </ul>
   </div>
   <div className="navbar-end gap-3">
-    <div>
+    {/* <div>
     <NavLink to="/login"  className="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
 <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
 <span className="relative">Login</span>
@@ -37,7 +40,19 @@ const Navbar = () => {
 <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
 <span className="relative">Register</span>
 </NavLink>
-    </div>
+    </div> */}
+
+{user ? ( // If user is logged in
+            <div className="relative">
+              <img src={user.image} alt="User" className="w-8 h-8 rounded-full cursor-pointer" />
+              <span className="absolute -right-1 -bottom-1 bg-white text-black text-xs px-2 py-1 rounded">
+                {user.name}
+              </span>
+              <button onClick={logout} className="ml-2 text-white">Logout</button>
+            </div>
+          ) : ( // If user is not logged in
+            <Link to="/login" className="text-white">Login</Link>
+          )}
   </div>
 </div>
         </div>
