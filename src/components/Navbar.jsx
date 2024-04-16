@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const navlinks = <>
         <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/updatep">Update Profile</NavLink></li>
-        <li><NavLink to="/userp">User Profile</NavLink></li>
     </>
     return (
         <div>
