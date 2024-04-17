@@ -33,12 +33,12 @@ const Navbar = () => {
     user? <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar" >
         <div className="w-12 rounded-full">
-            <img src={user?.photoURL || "../assets/house_619032.png"} alt="" />
+            <img src={user?.photoURL || "https://i.ibb.co/WsZ4wFT/Rectangle-7.png"} alt="" />
         </div>
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li>
-          <button className="btn btn-sm btn-ghost">{user.displayName}</button>
+          <button className="btn btn-sm btn-ghost">{user?.displayName || "Not Found"}</button>
         </li>
         <li>
           <button onClick={logout} className="btn btn-sm btn-ghost hover:text-red-500">Logout</button>
