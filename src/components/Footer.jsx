@@ -79,7 +79,7 @@ const Footer = () => {
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center text-gray-400">© 2010 Fantasy Home Co. All rights reserved.</div>
+	<div className="py-6 text-sm text-center text-gray-400">© 2022 Himel Group ltd. All rights reserved.</div>
 </footer>
         </div>
     );

@@ -6,6 +6,8 @@ import Login from "../pages/Login";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Profile from "../pages/Profile";
+import Details from "../components/Details";
+import PrivateRoute from "../components/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -36,6 +38,11 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>,
+            },
+            {
+                path: "/blog/:id",
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: () => fetch(`/blogs.json`)
             },
             
         ]
