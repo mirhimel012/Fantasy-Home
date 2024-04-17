@@ -8,7 +8,6 @@ const Navbar = () => {
         <li><NavLink to="/about">ABOUT</NavLink></li>
         <li><NavLink to="/contact">CONTACT</NavLink></li>
         <li><NavLink to="/profile">UPDATE PROFILE</NavLink></li>
-        {/* <li><NavLink to="/find">Find</NavLink></li> */}
     </>
     return (
         <div>

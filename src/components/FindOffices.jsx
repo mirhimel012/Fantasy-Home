@@ -1,5 +1,15 @@
+import { useEffect, useState } from "react";
+import OfficeCard from "./OfficeCard";
 
 const FindOffices = () => {
+    const[branches, setBranches] = useState([]);
+
+	useEffect(()=>{
+        fetch('./branch.json')
+        .then(res => res.json())
+        .then(data => setBranches(data))
+    },[])
+    
     return (
         <div>
              <div className="max-w-4xl mx-auto py-8">
@@ -8,44 +18,9 @@ const FindOffices = () => {
         <p className="text-gray-600">Find our branches below:</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        
-          <div className="bg-white p-4 shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Name</h3>
-            <p className="text-gray-600 mb-2">Address</p>
-            <p className="text-gray-600 mb-2">Phone: Phone Number</p>
-            <div className="flex justify-between items-center mt-4"></div>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Name</h3>
-            <p className="text-gray-600 mb-2">Address</p>
-            <p className="text-gray-600 mb-2">Phone: Phone Number</p>
-            <div className="flex justify-between items-center mt-4"></div>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Name</h3>
-            <p className="text-gray-600 mb-2">Address</p>
-            <p className="text-gray-600 mb-2">Phone: Phone Number</p>
-            <div className="flex justify-between items-center mt-4"></div>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Name</h3>
-            <p className="text-gray-600 mb-2">Address</p>
-            <p className="text-gray-600 mb-2">Phone: Phone Number</p>
-            <div className="flex justify-between items-center mt-4"></div>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Name</h3>
-            <p className="text-gray-600 mb-2">Address</p>
-            <p className="text-gray-600 mb-2">Phone: Phone Number</p>
-            <div className="flex justify-between items-center mt-4"></div>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Name</h3>
-            <p className="text-gray-600 mb-2">Address</p>
-            <p className="text-gray-600 mb-2">Phone: Phone Number</p>
-            <div className="flex justify-between items-center mt-4"></div>
-          </div>
-       
+            {
+                branches.map(branch => <OfficeCard key={branch.id} branch={branch}></OfficeCard>)
+            }
       </div>
       <div className="mt-8">
         <h2 className="text-2xl font-bold mb-4">Contact Information</h2>

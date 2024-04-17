@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Fantasy Home Main Branch ",
+    "address": "Shop-942-944, Level-09, Multiplan Center, Dhaka-1205",
+    "phone": "01332522026"
+  },
+  {
+    "id": 2,
+    "name": "Fantasy Home Branch 2",
+    "address": "Shop-123, ABC Plaza, XYZ Road, Dhaka-1205",
+    "phone": "01234567890"
+  },
+  {
+    "id": 3,
+    "name": "Fantasy Home Branch 3",
+    "address": "Shop-456, DEF Tower, PQR Street, Dhaka-1205",
+    "phone": "09876543210"
+  },
+  {
+    "id": 4,
+    "name": "Fantasy Home Branch 4",
+    "address": "Shop-789, GHI Building, LMN Avenue, Dhaka-1205",
+    "phone": "01234567890"
+  },
+  {
+    "id": 5,
+    "name": "Fantasy Home Branch 5",
+    "address": "Shop-1011, JKL Complex, OPQ Road, Dhaka-1205",
+    "phone": "09876543210"
+  },
+  {
+    "id": 6,
+    "name": "Fantasy Home Branch 6",
+    "address": "Shop-1213, RST Mall, UVW Street, Dhaka-1205",
+    "phone": "01234567890"
+  }
+]
