@@ -1,9 +1,10 @@
 import FirebaseProvider from "../FirebaseProvider/FirebaseProvider";
+import Slider from "../components/Slider";
 
 const Home = () => {
     return (
         <div>
-            <h4 className="text-4xl">This is Home</h4>
+            <Slider></Slider>
             <FirebaseProvider></FirebaseProvider>
         </div>
     );
