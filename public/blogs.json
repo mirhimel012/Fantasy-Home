@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxurious Villa with Ocean View",
+      "segment_name": "Residential",
+      "description": "Experience luxury living with breathtaking ocean views in this spacious villa.",
+      "price": "$1,500,000",
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Miami, Florida",
+      "facilities": ["Swimming pool", "Spa", "Gym", "Home theater"],
+      "image": "https://i.ibb.co/rchm1JB/big-tiny-belly-Xtn-Nr-QYC7ts-unsplash.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Modern Apartment in the City Center",
+      "segment_name": "Residential",
+      "description": "Contemporary apartment located in the heart of the city with access to all amenities.",
+      "price": "$800,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "New York City, New York",
+      "facilities": ["Gated community", "Fitness center", "Concierge service"],
+      "image": "https://i.ibb.co/9H9n87R/pexels-jan-van-der-wolf-15521730.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Cozy Family Home with Garden",
+      "segment_name": "Residential",
+      "description": "Charming family home featuring a spacious garden perfect for outdoor gatherings.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "Los Angeles, California",
+      "facilities": ["Large backyard", "Garage", "Fireplace"],
+      "image": "https://i.ibb.co/VwKmB55/pexels-binyamin-mellish-106399.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Seaside Cottage Retreat",
+      "segment_name": "Residential",
+      "description": "Escape to this cozy cottage by the sea, offering tranquility and relaxation.",
+      "price": "$400,000",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "Cape Cod, Massachusetts",
+      "facilities": ["Ocean view", "Deck", "Fire pit"],
+      "image": "https://i.ibb.co/3zzBJvy/mason-field-k28-h5-Ldy-Vs-unsplash.jpg"
+    }
+  ]
+  
