@@ -8,7 +8,8 @@ import Contact from "../pages/Contact";
 import Profile from "../pages/Profile";
 import Details from "../components/Details";
 import PrivateDetails from "../components/PrivateDetails";
-
+import FindOffices from "../components/FindOffices";
+import PrivateContact from "../components/PrivateContact";
 
 
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
                 path: "/blog/:id",
                 element: <PrivateDetails><Details></Details></PrivateDetails>,
                 loader: () => fetch(`/blogs.json`)
+            },
+            {
+                path: '/find',
+                element: <PrivateContact><FindOffices></FindOffices></PrivateContact>,
             },
             
         ]
