@@ -2,7 +2,9 @@
 const Profile = () => {
     return (
         <div>
-            <h2 className="text-2xl">Update your Profile Please</h2>
+            <div>
+                <h2 className="text-2xl text-center font-bold">Update your Profile Here:</h2>
+            </div>
         </div>
     );
 };

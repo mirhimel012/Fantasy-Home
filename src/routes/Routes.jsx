@@ -10,6 +10,7 @@ import Details from "../components/Details";
 import PrivateDetails from "../components/PrivateDetails";
 import FindOffices from "../components/FindOffices";
 import PrivateContact from "../components/PrivateContact";
+import PrivateProfile from "../pages/PrivateProfile";
 
 
 
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/profile',
-                element: <Profile></Profile>,
+                element: <PrivateProfile><Profile></Profile></PrivateProfile>,
             },
             {
                 path: '/register',

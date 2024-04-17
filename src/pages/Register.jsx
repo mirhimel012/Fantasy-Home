@@ -5,7 +5,7 @@ import useAuth from "../hooks/useAuth";
 import { useState } from "react";
 
 const Register = () => {
-  const {createUser} = useAuth();
+  const {createUser, updateUserProfile} = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const[registerError, setRegisterError] = useState('');
   const[success, setSuccess] = useState('');
@@ -22,7 +22,7 @@ const Register = () => {
   const from = location ?.state || '/'
 
   const onSubmit = (data) => {
-    const{email, password} = data
+    const{email, password, image, fullName} = data
     console.log(data)
 
     // Password verification
@@ -55,15 +55,20 @@ const Register = () => {
          return;
      }
 
+     // create user and update profile
     createUser(email, password)
-      .then(result => {
-        if(result.user){
-          navigate(from);
-        }
+      .then(() => {
+        updateUserProfile(fullName, image)
+        .then(()=>{
+            navigate(from);
+        })
       })
       .catch(error => {
         // Handle registration errors
         setRegisterError("Registration failed. Please try again.");
+        setTimeout(() => {
+          setRegisterError('');
+      }, 4000);
         console.error(error);
       });
   };
