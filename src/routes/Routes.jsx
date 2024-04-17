@@ -7,7 +7,9 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Profile from "../pages/Profile";
 import Details from "../components/Details";
-import PrivateRoute from "../components/PrivateRoute";
+import PrivateDetails from "../components/PrivateDetails";
+
+
 
 
 const router = createBrowserRouter([
@@ -41,7 +43,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/blog/:id",
-                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                element: <PrivateDetails><Details></Details></PrivateDetails>,
                 loader: () => fetch(`/blogs.json`)
             },
             
