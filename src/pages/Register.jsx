@@ -1,9 +1,8 @@
 import { useForm } from "react-hook-form"
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import useAuth from "../hooks/useAuth";
 import { useState } from "react";
-// import { toast } from 'react-toastify';
 
 const Register = () => {
   const {createUser} = useAuth();
@@ -16,6 +15,12 @@ const Register = () => {
     handleSubmit,
     formState: { errors }
   } = useForm();
+
+  // navigation system
+  const navigate = useNavigate()
+  const location = useLocation()
+  const from = location ?.state || '/'
+
   const onSubmit = (data) => {
     const{email, password} = data
     console.log(data)
@@ -52,9 +57,9 @@ const Register = () => {
 
     createUser(email, password)
       .then(result => {
-        // Show success toast
-        setSuccess("Registration successful!");
-        console.log(result);
+        if(result.user){
+          navigate(from);
+        }
       })
       .catch(error => {
         // Handle registration errors

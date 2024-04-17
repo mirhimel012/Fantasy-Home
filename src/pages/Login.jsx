@@ -28,6 +28,7 @@ const Login = () => {
   // Social Login Auth Receive
   const {googleLogin, githubLogin} = useAuth();
 
+  // navigation system
   const navigate = useNavigate()
   const location = useLocation()
   const from = location ?.state || '/'
