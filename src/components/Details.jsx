@@ -22,7 +22,7 @@ const Details = () => {
 
     return (
         <div className="container mx-auto py-8">
-            <div className="max-w-5xl mx-auto border rounded-2xl p-4 m-2 border-opacity-30 border-primary hover:border-secondary  ">
+            <div className="max-w-5xl mx-auto border rounded-2xl p-4 m-2 border-opacity-30 border-primary hover:border-secondary">
 
 <div  className="  dark:bg-gray-50">
     <div className="">

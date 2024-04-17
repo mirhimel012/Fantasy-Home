@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import useAuth from "../hooks/useAuth";
 import { useState } from "react";
@@ -18,8 +18,7 @@ const Register = () => {
 
   // navigation system
   const navigate = useNavigate()
-  const location = useLocation()
-  const from = location ?.state || '/'
+  const from = '/';
 
   const onSubmit = (data) => {
     const{email, password, image, fullName} = data
