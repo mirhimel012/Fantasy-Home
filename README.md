@@ -13,7 +13,7 @@ Website Features:
 
 npm package name:
 <ul>
-  <ol>React Hook form</ol>
-  <ol>AOS Package</ol>
-  <ol>Animate.css</ol>
+  <li>React Hook form</li>
+  <li>AOS Package</li>
+  <li>Animate.css</li>
 </ul>
