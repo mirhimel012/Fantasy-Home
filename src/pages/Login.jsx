@@ -85,7 +85,7 @@ const Login = () => {
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
         </div>
-        <div className="text-center mt-2">      
+        <div className="text-center text-xl mt-2">      
 	       <p>New Here? Please <Link className="text-lime-600 font-bold" to="/register">Register</Link></p>
         </div>
       </form>
