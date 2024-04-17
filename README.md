@@ -1,16 +1,19 @@
 Website Name: Fantasy Home
+<br>
 Live Site URL: 
 
 Website Features:
-1. 
-2. 
-3. 
-4. 
-5. 
+<ul>
+  <li>Comprehensive Property Listings</li>
+  <li>User-Friendly Search Functionality</li>
+  <li>Interactive Maps and Virtual Tours</li>
+  <li>Personalized Recommendations</li>
+  <li>Expert Real Estate Guidance</li>
+</ul>
 
 npm package name:
-a. React Hook form,
-b. Animate.css,
-c. React-leaflet,
-d. AOS Package,
-e. Swiper slider
+<ul>
+  <ol>React Hook form</ol>
+  <ol>AOS Package</ol>
+  <ol>Animate.css</ol>
+</ul>
