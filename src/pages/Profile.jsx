@@ -32,7 +32,7 @@ const Profile = () => {
     <p className="text-gray-700"><span className='font-semibold'>Name:</span> {user.displayName}</p>
     <p className="text-gray-700"><span className='font-semibold'>Email:</span> {user.email}</p>
     <div className='flex justify-center m-6'>
-      <img src={user.photoURL} alt="Profile" className="w-32 h-32 rounded-full mt-4" />
+      <img src={user?.photoURL || "https://i.ibb.co/WsZ4wFT/Rectangle-7.png"} alt="Profile" className="w-32 h-32 rounded-full mt-4" />
     </div>
         </div>
 
