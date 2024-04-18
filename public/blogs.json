@@ -1,51 +1,54 @@
 [
-    {
-      "id": 1,
-      "estate_title": "Luxurious Villa with Ocean View",
-      "segment_name": "Residential",
-      "description": "Experience luxury living with breathtaking ocean views in this spacious villa.",
-      "price": "$1,500,000",
-      "status": "sale",
-      "area": "5000 sq ft",
-      "location": "Miami, Florida",
-      "facilities": ["Swimming pool", "Spa", "Gym", "Home theater"],
-      "image": "https://i.ibb.co/rchm1JB/big-tiny-belly-Xtn-Nr-QYC7ts-unsplash.jpg"
-    },
-    {
-      "id": 2,
-      "estate_title": "Modern Apartment in the City Center",
-      "segment_name": "Residential",
-      "description": "Contemporary apartment located in the heart of the city with access to all amenities.",
-      "price": "$800,000",
-      "status": "sale",
-      "area": "1500 sq ft",
-      "location": "New York City, New York",
-      "facilities": ["Gated community", "Fitness center", "Concierge service"],
-      "image": "https://i.ibb.co/9H9n87R/pexels-jan-van-der-wolf-15521730.jpg"
-    },
-    {
-      "id": 3,
-      "estate_title": "Cozy Family Home with Garden",
-      "segment_name": "Residential",
-      "description": "Charming family home featuring a spacious garden perfect for outdoor gatherings.",
-      "price": "$600,000",
-      "status": "sale",
-      "area": "2500 sq ft",
-      "location": "Los Angeles, California",
-      "facilities": ["Large backyard", "Garage", "Fireplace"],
-      "image": "https://i.ibb.co/VwKmB55/pexels-binyamin-mellish-106399.jpg"
-    },
-    {
-      "id": 4,
-      "estate_title": "Seaside Cottage Retreat",
-      "segment_name": "Residential",
-      "description": "Escape to this cozy cottage by the sea, offering tranquility and relaxation.",
-      "price": "$400,000",
-      "status": "rent",
-      "area": "1200 sq ft",
-      "location": "Cape Cod, Massachusetts",
-      "facilities": ["Ocean view", "Deck", "Fire pit"],
-      "image": "https://i.ibb.co/3zzBJvy/mason-field-k28-h5-Ldy-Vs-unsplash.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "estate_title": "Luxurious Villa with Ocean View",
+    "segment_name": "Residential",
+    "description": "Experience luxury living with breathtaking ocean views in this spacious villa.",
+    "long_description": "Indulge in the epitome of coastal elegance with this luxurious villa overlooking the shimmering waters of the Atlantic Ocean. Nestled within the vibrant city of Miami, Florida, this palatial residence offers an unparalleled blend of sophistication and tranquility. From its expansive living spaces to its meticulously landscaped grounds, every aspect of this home has been designed to elevate the art of living.",
+    "price": "$1,500,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Miami, Florida",
+    "facilities": ["Swimming pool", "Spa", "Gym", "Home theater"],
+    "image": "https://i.ibb.co/rchm1JB/big-tiny-belly-Xtn-Nr-QYC7ts-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "estate_title": "Modern Apartment in the City Center",
+    "segment_name": "Residential",
+    "description": "Contemporary apartment located in the heart of the city with access to all amenities.",
+    "long_description": "Embrace urban sophistication with this modern apartment nestled in the bustling heart of New York City. Boasting sleek architectural lines and luxurious finishes, this residence offers a cosmopolitan lifestyle amidst the vibrant energy of the city. From its panoramic views to its premium amenities, this is city living at its finest.",
+    "price": "$800,000",
+    "status": "sale",
+    "area": "1500 sq ft",
+    "location": "New York City, New York",
+    "facilities": ["Gated community", "Fitness center", "Concierge service"],
+    "image": "https://i.ibb.co/9H9n87R/pexels-jan-van-der-wolf-15521730.jpg"
+  },
+  {
+    "id": 3,
+    "estate_title": "Cozy Family Home with Garden",
+    "segment_name": "Residential",
+    "description": "Charming family home featuring a spacious garden perfect for outdoor gatherings.",
+    "long_description": "Discover the warmth and charm of family living in this cozy home nestled within the picturesque landscapes of Los Angeles, California. Boasting a spacious garden oasis, this residence offers an idyllic retreat from the hustle and bustle of city life. With its inviting interiors and outdoor spaces, this home is the epitome of comfort and serenity.",
+    "price": "$600,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Los Angeles, California",
+    "facilities": ["Large backyard", "Garage", "Fireplace"],
+    "image": "https://i.ibb.co/VwKmB55/pexels-binyamin-mellish-106399.jpg"
+  },
+  {
+    "id": 4,
+    "estate_title": "Seaside Cottage Retreat",
+    "segment_name": "Residential",
+    "description": "Escape to this cozy cottage by the sea, offering tranquility and relaxation.",
+    "long_description": "Experience coastal charm and serenity with this picturesque seaside cottage retreat in the enchanting surroundings of Cape Cod, Massachusetts. Nestled along the pristine shores of the Atlantic Ocean, this idyllic hideaway offers the perfect blend of comfort and tranquility. From its breathtaking ocean views to its cozy interior spaces, this cottage is the ultimate sanctuary for relaxation and rejuvenation.",
+    "price": "$400,000",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Cape Cod, Massachusetts",
+    "facilities": ["Ocean view", "Deck", "Fire pit"],
+    "image": "https://i.ibb.co/3zzBJvy/mason-field-k28-h5-Ldy-Vs-unsplash.jpg"
+  }
+]

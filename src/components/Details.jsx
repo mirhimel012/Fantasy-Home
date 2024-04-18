@@ -18,7 +18,7 @@ const Details = () => {
         return <div className='text-center'><span className="loading loading-infinity loading-lg"></span></div>;
     }
 
-    const {estate_title, price, image, description, area, status, location, facilities} = details;
+    const {estate_title, price, image, description, long_description, area, status, location, facilities} = details;
 
     return (
         <div className="container mx-auto py-8">
@@ -31,6 +31,7 @@ const Details = () => {
     <div className='text-center m-4'>
         <h3 className="font-bold text-xl lg:text-3xl">{estate_title}</h3>
     </div>
+    <p className='text-xl m-6 text-center'>{description}</p>
     <div className='flex justify-center'>
         <div className='border border-primary rounded-2xl p-4 m-6 w-fit'>
             <h2><span className="text-lg font-bold">Price:</span> <span className="text-lg font-semibold">{price}</span></h2>
@@ -51,7 +52,7 @@ const Details = () => {
     <div className="p-6 space-y-2">
         
 
-        <p className='text-xl m-6'>{description}</p>
+        <p className='text-xl m-6'>{long_description}</p>
 
         <h5 className="border-b-2 m-2 border-dashed mx-auto"></h5>
 
