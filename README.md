@@ -1,6 +1,6 @@
 Website Name: Fantasy Home
 <br>
-Live Site URL: 
+Live Site URL: https://fantasyhome.netlify.app/
 
 Website Features:
 <ul>
