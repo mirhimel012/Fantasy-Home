@@ -56,4 +56,8 @@ npm start
 
 Take a sneak peek at Fantasy Home in action:
 
-![Fantasy Home Screenshot]()
+![Fantasy Home Screenshot](https://i.ibb.co/hFmqPwnp/Screenshot-2025-06-01-222851.png)
+![Fantasy Home Screenshot](https://i.ibb.co/gLZRt5HN/Screenshot-2025-06-01-223012.png)
+![Fantasy Home Screenshot](https://i.ibb.co/wXFPBQp/Screenshot-2025-06-01-223059.png)
+![Fantasy Home Screenshot](https://i.ibb.co/Gf3XZ8r0/Screenshot-2025-06-01-223114.png)
+![Fantasy Home Screenshot](https://i.ibb.co/svM644nP/Screenshot-2025-06-01-223130.png)
